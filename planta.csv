@@ -1,0 +1,8 @@
+id,nombre_equipo,tipo_equipo,valor_calibracion,ultimo_mantenimiento
+101,Bomba Centrífuga P-1A,Bomba,15.0 Bar,2025-09-15
+102,Mezclador M-5,Agitador/Mezclador,45 RPM,2025-08-20
+103,Horno de Secado H-10,Horno,120.5 C,2025-10-01
+104,Compresor de Aire CA-3,Compresor,8.0 Bar,2025-07-10
+105,Válvula de Control VC-22,Instrumentación,50%,2025-09-25
+106,Sistema de Control PLC-Main,Control,OK,2025-06-30
+107,Sensor de Temperatura TS-5,Sensor,1.0 C Desviación,2025-10-15
