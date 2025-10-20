@@ -56,3 +56,24 @@ except FileNotFoundError:
 except Exception as e:
     print(f"Ocurrió un error inesperado durante la búsqueda: {e}")
 
+#--- busqueda indexada ---
+try:
+    with open(file_path, 'r', encoding='utf-8') as file:
+        lineas = file.readlines()
+        total_lineas = len(lineas)
+        
+        try:
+            index_input = int(input(f"\nIngrese el número de línea (0 a {total_lineas - 1}) que desea buscar: "))
+            
+            if 0 <= index_input < total_lineas:
+                linea_seleccionada = lineas[index_input].strip()
+                linea_sin_puntuacion = linea_seleccionada.replace(',', '    ')
+                print("Línea Seleccionada:")
+                print(linea_sin_puntuacion)
+            else:
+                print(f"Número de línea inválido. Debe estar entre 0 y {total_lineas - 1}.")
+        except ValueError:
+            print("Entrada inválida. Por favor ingrese un número entero.")
+except FileNotFoundError:
+    print(f"Error: El archivo '{file_path}' no se encontró para la búsqueda indexada.")
+#--- busqueda indexada ---
